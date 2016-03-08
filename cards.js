@@ -2,7 +2,6 @@ var create =  document.getElementById("create");
 var deleteCard = document.getElementsByClassName("delete");
 var container = document.getElementById("container");
 var input = document.getElementById("input");
-var container = document.getElementById("container");
 var card = document.getElementsByClassName("card"); //array like object
 var text = document.getElementsByClassName("text");
 
@@ -18,7 +17,7 @@ function createCard(){
 //target the parent card and instruct to remove child with each click of each delete button//////
 function removeCard(event){
 var thisCard = event.target.parentElement;
-container.removeChild(thisCard)  ////used node.removeChild method
+container.removeChild(thisCard)  ////used node.removeChild method as the card is i.e container is the child of the div or the create card function
 }
 ////made event listener on each dynamically created delete button
 function deleteBtnEventListener(){
